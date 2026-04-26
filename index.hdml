@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthika Sundar | Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f2937;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Keerthika Sundar</h1>
+    <p>Data Analyst | Business Intelligence | Supply Chain Analytics</p>
+    <p>
+        📧 keerthikasundar1921@gmail.com |
+        📍 Tamil Nadu, India <br>
+        🔗 <a href="https://github.com/keerthisundar222" target="_blank">GitHub</a> |
+        🔗 <a href="https://linkedin.com/in/keerthi-sundar" target="_blank">LinkedIn</a>
+    </p>
+</header>
+
+<section>
+    <h2>Professional Summary</h2>
+    <div class="card">
+        <p>
+            MBA graduate specializing in Data Analytics and Supply Chain Management with hands-on experience in 
+            Power BI, SQL, Excel, and Python. Skilled in building dashboards, automating workflows, and delivering 
+            data-driven insights to improve business performance.
+        </p>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <ul>
+            <li><b>Data Visualization:</b> Power BI, Excel</li>
+            <li><b>Programming:</b> SQL, Python (Pandas)</li>
+            <li><b>Tools:</b> KNIME, Canva, Microsoft Office</li>
+            <li><b>Domain:</b> Supply Chain Analytics, Pricing, BI</li>
+        </ul>
+    </div>
+
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>BlinkIT Real-Time Sales Dashboard</h3>
+        <p>Analyzed sales, inventory, and customer ratings using Power BI.</p>
+        <a href="https://github.com/keerthisundar222/blinkIT-Real-Time-Data-Project-Power-BI" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>Sales Performance Dashboard</h3>
+        <p>Built a dynamic dashboard to analyze regional and product-level sales.</p>
+        <a href="https://github.com/keerthisundar222/Sales-Performance" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>Meta Ad Performance Dashboard</h3>
+        <p>Analyzed Facebook & Instagram ad data to improve marketing insights.</p>
+        <a href="https://github.com/keerthisundar222/Meta-AD-Performance-Dashboard-Facebook-Instagram" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>India General Election 2024 Dashboard</h3>
+        <p>Developed Power BI visualizations for election data analysis.</p>
+        <a href="https://github.com/keerthisundar222/Party-Alliance-Indian-general-election-2024-dashboard" target="_blank">View Project</a>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Data Analyst Intern – VDart</h3>
+        <p>Worked on SLA dashboards, pricing analysis, and workflow optimization.</p>
+
+        <h3>Junior Data Analyst – UCAL Exports</h3>
+        <p>Handled pricing analysis, RFQs, and workflow automation.</p>
+
+        <h3>Operations Intern – Fresh2Day</h3>
+        <p>Optimized warehouse operations and inventory management using JIT.</p>
+    </div>
+
+    <h2>Education</h2>
+    <div class="card">
+        <p><b>MBA</b> – Supply Chain & Data Analytics (GPA: 9.48)</p>
+        <p><b>B.Com</b> – General (CGPA: 8.05)</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Keerthika Sundar | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
