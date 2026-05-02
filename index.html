@@ -353,6 +353,48 @@
     font-size: 0.8rem;
   }
 
+  /* ── CERTIFICATIONS ── */
+  .cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cert-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .cert-item:hover { border-color: var(--accent); transform: translateX(4px); }
+
+  .cert-icon { font-size: 1.6rem; flex-shrink: 0; }
+
+  .cert-info { flex: 1; }
+  .cert-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 3px;
+  }
+  .cert-info p { font-size: 0.85rem; color: var(--muted); }
+
+  .cert-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+  .cert-badge.completed { background: rgba(126,232,158,0.12); color: #7ee89e; border: 1px solid rgba(126,232,158,0.3); }
+  .cert-badge.inprogress { background: rgba(232,201,126,0.12); color: var(--accent); border: 1px solid rgba(232,201,126,0.3); }
+
   /* ── FOOTER ── */
   footer {
     text-align: center;
@@ -397,6 +439,7 @@
 <nav>
   <a href="#skills">Skills</a>
   <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
   <a href="#projects">Projects</a>
 </nav>
 
@@ -486,6 +529,44 @@
           <li>Applied Just-In-Time (JIT) inventory strategies and maintained real-time data tracking to enhance inventory coordination and minimize stockouts.</li>
           <li>Partnered with cross-functional supply chain teams to identify and implement process improvements, driving measurable operational efficiency gains.</li>
         </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="container">
+    <p class="section-label reveal">Credentials</p>
+    <h2 class="section-title reveal">Certifications &amp; Development</h2>
+    <div class="cert-list">
+
+      <div class="cert-item reveal">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>KNIME Analytics Platform</h3>
+          <p>Level 1 Certification</p>
+        </div>
+        <span class="cert-badge completed">Completed</span>
+      </div>
+
+      <div class="cert-item reveal">
+        <div class="cert-icon">📘</div>
+        <div class="cert-info">
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p>Coursera</p>
+        </div>
+        <span class="cert-badge inprogress">In Progress</span>
+      </div>
+
+      <div class="cert-item reveal">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-info">
+          <h3>Masters in Data Analytics</h3>
+          <p>Postgraduate Degree</p>
+        </div>
+        <span class="cert-badge inprogress">In Progress</span>
       </div>
 
     </div>
