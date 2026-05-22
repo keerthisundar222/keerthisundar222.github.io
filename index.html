@@ -31,7 +31,6 @@
     overflow-x: hidden;
   }
 
-  /* ── HEADER ── */
   header {
     position: relative;
     min-height: 340px;
@@ -134,7 +133,6 @@
   }
   .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 
-  /* ── NAV ── */
   nav {
     position: sticky;
     top: 0;
@@ -160,7 +158,6 @@
   }
   nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-  /* ── LAYOUT ── */
   .container {
     max-width: 960px;
     margin: 0 auto;
@@ -190,7 +187,6 @@
     margin-bottom: 40px;
   }
 
-  /* ── SKILLS ── */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -226,7 +222,6 @@
     line-height: 1.7;
   }
 
-  /* ── EXPERIENCE ── */
   .timeline {
     position: relative;
     padding-left: 28px;
@@ -316,7 +311,6 @@
     top: 1px;
   }
 
-  /* ── PROJECTS ── */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -353,7 +347,27 @@
     font-size: 0.8rem;
   }
 
-  /* ── CERTIFICATIONS ── */
+  /* Tag badges on project cards */
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2px;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 20px;
+  }
+
+  .tag-sql { background: rgba(232,201,126,0.12); color: var(--accent); border: 1px solid rgba(232,201,126,0.25); }
+  .tag-python { background: rgba(126,184,232,0.12); color: var(--accent2); border: 1px solid rgba(126,184,232,0.25); }
+  .tag-powerbi { background: rgba(232,126,126,0.12); color: #e87e9e; border: 1px solid rgba(232,126,126,0.25); }
+
   .cert-list {
     display: flex;
     flex-direction: column;
@@ -395,7 +409,6 @@
   .cert-badge.completed { background: rgba(126,232,158,0.12); color: #7ee89e; border: 1px solid rgba(126,232,158,0.3); }
   .cert-badge.inprogress { background: rgba(232,201,126,0.12); color: var(--accent); border: 1px solid rgba(232,201,126,0.3); }
 
-  /* ── FOOTER ── */
   footer {
     text-align: center;
     padding: 28px;
@@ -404,7 +417,6 @@
     color: var(--muted);
   }
 
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
@@ -417,7 +429,6 @@
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 600px) {
     nav a { padding: 12px 12px; font-size: 0.75rem; }
     .skills-grid, .projects-grid { grid-template-columns: 1fr; }
@@ -443,7 +454,7 @@
   <a href="#projects">Projects</a>
 </nav>
 
-<!-- ── SKILLS ── -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <p class="section-label reveal">Expertise</p>
@@ -484,7 +495,7 @@
   </div>
 </section>
 
-<!-- ── EXPERIENCE ── -->
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
     <p class="section-label reveal">Career</p>
@@ -535,7 +546,7 @@
   </div>
 </section>
 
-<!-- ── CERTIFICATIONS ── -->
+<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="container">
     <p class="section-label reveal">Credentials</p>
@@ -573,34 +584,68 @@
   </div>
 </section>
 
-<!-- ── PROJECTS ── -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <p class="section-label reveal">Work</p>
     <h2 class="section-title reveal">Projects</h2>
     <div class="projects-grid">
 
+      <!-- NEW: SQL Project -->
+      <div class="project-card reveal">
+        <h3>Swiggy Data Analysis Using SQL</h3>
+        <p>100 SQL queries on Swiggy food orders dataset — from basic filtering to advanced window functions, subqueries, and business insights like revenue analysis and Pareto distribution.</p>
+        <div class="project-tags">
+          <span class="tag tag-sql">SQL</span>
+          <span class="tag tag-sql">MySQL</span>
+        </div>
+        <a href="https://github.com/keerthisundar222/Swiggy-Data-Analysis-Using-SQL" target="_blank" class="btn btn-outline">View Repository →</a>
+      </div>
+
+      <!-- NEW: Python Project -->
+      <div class="project-card reveal">
+        <h3>Linear Regression Project</h3>
+        <p>Built and evaluated a linear regression model using Python to predict outcomes from real-world data. Covers data preprocessing, model training, evaluation metrics, and visualization.</p>
+        <div class="project-tags">
+          <span class="tag tag-python">Python</span>
+          <span class="tag tag-python">Machine Learning</span>
+        </div>
+        <a href="https://github.com/keerthisundar222/linear-regression-project" target="_blank" class="btn btn-outline">View Repository →</a>
+      </div>
+
       <div class="project-card reveal">
         <h3>India General Election 2024 Dashboard</h3>
         <p>Power BI dashboard analyzing election data, alliances, and vote share across constituencies.</p>
+        <div class="project-tags">
+          <span class="tag tag-powerbi">Power BI</span>
+        </div>
         <a href="https://github.com/keerthisundar222/Party-Alliance-Indian-general-election-2024-dashboard" target="_blank" class="btn btn-outline">View Repository →</a>
       </div>
 
       <div class="project-card reveal">
         <h3>Meta Ad Performance Dashboard</h3>
         <p>Analyzed Facebook &amp; Instagram ads performance metrics to surface actionable insights.</p>
+        <div class="project-tags">
+          <span class="tag tag-powerbi">Power BI</span>
+        </div>
         <a href="https://github.com/keerthisundar222/Meta-AD-Performance-Dashboard-Facebook-Instagram" target="_blank" class="btn btn-outline">View Repository →</a>
       </div>
 
       <div class="project-card reveal">
         <h3>Sales Performance Dashboard</h3>
         <p>Interactive dashboard for product and regional sales analysis with drill-through capability.</p>
+        <div class="project-tags">
+          <span class="tag tag-powerbi">Power BI</span>
+        </div>
         <a href="https://github.com/keerthisundar222/Sales-Performance" target="_blank" class="btn btn-outline">View Repository →</a>
       </div>
 
       <div class="project-card reveal">
         <h3>BlinkIT Sales Analysis</h3>
         <p>Real-time dashboard tracking revenue, inventory levels, and key performance indicators.</p>
+        <div class="project-tags">
+          <span class="tag tag-powerbi">Power BI</span>
+        </div>
         <a href="https://github.com/keerthisundar222/blinkIT-Real-Time-Data-Project-Power-BI" target="_blank" class="btn btn-outline">View Repository →</a>
       </div>
 
@@ -613,7 +658,6 @@
 </footer>
 
 <script>
-  // Scroll-reveal
   const els = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
